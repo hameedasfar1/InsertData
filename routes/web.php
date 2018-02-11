@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('insert');
-});
+
+
+Route::get('/', 'Controller@getData');
 Route::post('/insert','Controller@insert');
+
+
 
