@@ -11,10 +11,21 @@
 |
 */
 
+Route::get('/', function () {
+    return view('insert');
+
+});
+
+Route::get('create', 'DisplayDataController@create');
+Route::get('index', 'DisplayDataController@index');
+
+Route::get('show', 'NewController@show');
+   
 
 
-Route::get('/', 'Controller@getData');
-Route::post('/insert','Controller@insert');
+
+
+
 
 
 
